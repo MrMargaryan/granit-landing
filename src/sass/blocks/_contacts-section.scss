@@ -12,7 +12,7 @@
     background-position: center;
   }
 
-  &--box {
+  &__box {
     max-width: 380px;
     margin-right: auto;
     margin-left: auto;
@@ -28,26 +28,26 @@
     }
   }
 
-  &--title {
+  &__title {
     margin-bottom: 50px;
 
     text-align: left;
   }
 
-  &--list {
+  &__list {
     font-size: 14px;
 
     padding-left: 30px;
   }
 
-  &--item {
+  &__item {
     position: relative;
 
     &:not(:last-child) {
       margin-bottom: 36px;
     }
 
-    &__telephone {
+    &--telephone {
       font-family: 'GothamProMedium';
       line-height: 30px;
 
@@ -69,7 +69,7 @@
       }
     }
 
-    &__address {
+    &--address {
       line-height: 16px;
 
       &::before {
@@ -90,7 +90,7 @@
       }
     }
 
-    &__mail {
+    &--mail {
       text-decoration: underline;
 
       &::before {

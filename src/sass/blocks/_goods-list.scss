@@ -12,7 +12,7 @@
     margin: $gap 0 0 $gap;
   }
 
-  &--item {
+  &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,11 +21,11 @@
 
     text-align: center;
 
-    &__gray-border {
+    &--gray-border {
       border: 2px solid $very-light-gray;
     }
 
-    &__white-border {
+    &--white-border {
       border: 2px solid #ffffff;
       transition: all 0.2s;
 
@@ -37,28 +37,28 @@
     }
   }
 
-  &--picture {
+  &__picture {
     position: relative;
   }
 
-  &--title {
+  &__title {
     position: relative;
 
     font-family: 'GothamProMedium';
 
-    &__sm {
+    &--sm {
       font-size: 13px;
     }
 
-    &__lg {
+    &--lg {
       font-size: 15px;
     }
 
-    &__underline {
+    &--underline {
       text-decoration: underline;
     }
 
-    &__cheap {
+    &--cheap {
       &::before {
         content: '';
 
@@ -78,7 +78,7 @@
       }
     }
 
-    &__fast {
+    &--fast {
       &::before {
         content: '';
 
@@ -97,7 +97,7 @@
       }
     }
 
-    &__individual {
+    &--individual {
       &::before {
         content: '';
 
@@ -118,29 +118,29 @@
     }
   }
 
-  &--description {
+  &__description {
     overflow-y: hidden;
 
     font-family: 'GothamProLight';
     font-size: 13px;
     line-height: 18px;
 
-    &__light-gray {
+    &--light-gray {
       color: $light-gray;
     }
   }
 
-  &--price {
+  &__price {
     font-family: 'GothamProMedium';
     font-size: 16px;
     text-transform: lowercase;
 
-    &__red {
+    &--red {
       color: #ff0000;
     }
   }
 
-  &--price--old {
+  &__price-old {
     margin-right: 10px;
 
     color: $light-gray;

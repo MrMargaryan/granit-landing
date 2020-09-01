@@ -2,18 +2,18 @@
   padding-top: 80px;
   padding-bottom: 95px;
 
-  &--title {
+  &__title {
     margin-bottom: 55px;
   }
 
-  &--goods-list--item {
+  &__goods-list__item {
     padding-top: 20px;
     padding-right: 19px;
     padding-bottom: 20px;
     padding-left: 19px;
   }
 
-  &--goods-list--image {
+  &__goods-list__image {
     width: 180px;
     height: 155px;
     margin-bottom: 20px;
@@ -21,7 +21,7 @@
     object-fit: cover;
   }
 
-  &--goods-list--title {
+  &__goods-list__title {
     width: 180px;
     height: 32px;
     margin-bottom: 25px;
@@ -30,11 +30,11 @@
     line-height: 16px;
   }
 
-  &--goods-list--price {
+  &__goods-list__price {
     margin-bottom: 25px;
   }
 
-  &--button {
+  &__button {
     width: 100%;
   }
 }

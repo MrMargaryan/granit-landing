@@ -7,12 +7,12 @@
     'image subtitle';
   align-items: center;
 
-  &--image {
+  &__image {
     width: 38px;
     grid-area: image;
   }
 
-  &--name {
+  &__name {
     grid-area: name;
 
     font-family: 'GothamProBold';
@@ -21,7 +21,7 @@
     letter-spacing: 2px;
   }
 
-  &--subtitle {
+  &__subtitle {
     grid-area: subtitle;
 
     color: $light-gray;

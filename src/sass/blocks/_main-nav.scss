@@ -1,5 +1,5 @@
 .main-nav {
-  &--toggle {
+  &__toggle {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -17,7 +17,7 @@
     }
   }
 
-  &--menu {
+  &__menu {
     position: absolute;
     top: 0;
     left: 0;
@@ -36,7 +36,7 @@
     }
   }
 
-  &--item {
+  &__item {
     width: 100%;
     padding: 15px;
 
@@ -54,7 +54,7 @@
     }
   }
 
-  &--link {
+  &__link {
     font-family: 'GothamProMedium';
     color: #000000;
     font-size: 14px;

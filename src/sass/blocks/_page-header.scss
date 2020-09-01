@@ -7,7 +7,7 @@
     height: 130px;
   }
 
-  &--top {
+  &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,11 +15,11 @@
     padding-top: 25px;
   }
 
-  &--phone {
+  &__phone {
     margin-right: 30px;
   }
 
-  &--contacts {
+  &__contacts {
     display: none;
 
     @media (min-width: $tablet-size) {

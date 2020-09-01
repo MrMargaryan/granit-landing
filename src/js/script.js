@@ -1,5 +1,5 @@
-const toggleButton = document.querySelector('.main-nav--toggle')
-const menu = document.querySelector('.main-nav--menu')
+const toggleButton = document.querySelector('.main-nav__toggle')
+const menu = document.querySelector('.main-nav__menu')
 
 let isOpen = false
 

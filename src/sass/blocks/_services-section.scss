@@ -4,18 +4,18 @@
 
   background-color: $very-light-gray;
 
-  &--title {
+  &__title {
     margin-bottom: 63px;
   }
 
-  &--goods-list--item {
+  &__goods-list__item {
     padding-top: 50px;
     padding-right: 60px;
     padding-bottom: 35px;
     padding-left: 60px;
   }
 
-  &--goods-list--image {
+  &__goods-list__image {
     width: 223px;
     height: 125px;
     margin-bottom: 30px;

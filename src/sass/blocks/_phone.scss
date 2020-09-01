@@ -3,14 +3,14 @@
   flex-direction: column;
   align-items: flex-end;
 
-  &--number {
+  &__number {
     margin-bottom: 5px;
 
     font-family: 'GothamProBold';
     font-size: 18px;
   }
 
-  &--subtitle {
+  &__subtitle {
     color: $light-gray;
     font-size: 11px;
   }
