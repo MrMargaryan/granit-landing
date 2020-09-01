@@ -1,0 +1,36 @@
+.in-stock-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  &--title {
+    margin-bottom: 60px;
+  }
+
+  &--goods-list--item {
+    padding-top: 52px;
+    padding-right: 30px;
+    padding-bottom: 36px;
+    padding-left: 30px;
+  }
+
+  &--goods-list--image {
+    width: 260px;
+    height: 115px;
+    margin-bottom: 50px;
+
+    object-fit: contain;
+  }
+
+  &--goods-list--title {
+    margin-bottom: 20px;
+  }
+
+  &--goods-list--description {
+    margin-bottom: 25px;
+    height: 121px;
+  }
+
+  &--goods-list--price {
+    margin-bottom: 33px;
+  }
+}

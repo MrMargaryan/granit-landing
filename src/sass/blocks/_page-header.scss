@@ -1,0 +1,30 @@
+.page-header {
+  position: relative;
+
+  height: 100px;
+
+  @media (min-width: $tablet-size) {
+    height: 130px;
+  }
+
+  &--top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 25px;
+  }
+
+  &--phone {
+    margin-right: 30px;
+  }
+
+  &--contacts {
+    display: none;
+
+    @media (min-width: $tablet-size) {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

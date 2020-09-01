@@ -1,0 +1,30 @@
+.logo {
+  display: inline-grid;
+  column-gap: 15px;
+  grid-template-columns: 38px 1fr;
+  grid-template-areas:
+    'image name'
+    'image subtitle';
+  align-items: center;
+
+  &--image {
+    width: 38px;
+    grid-area: image;
+  }
+
+  &--name {
+    grid-area: name;
+
+    font-family: 'GothamProBold';
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  &--subtitle {
+    grid-area: subtitle;
+
+    color: $light-gray;
+    font-size: 11px;
+  }
+}

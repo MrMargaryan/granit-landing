@@ -1,0 +1,150 @@
+.goods-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin: calc(-1 * #{$gap}) 0 0 calc(-1 * #{$gap});
+  width: calc(100% + #{$gap});
+
+  & > * {
+    margin: $gap 0 0 $gap;
+  }
+
+  &--item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 300px;
+
+    text-align: center;
+
+    &__gray-border {
+      border: 2px solid $very-light-gray;
+    }
+
+    &__white-border {
+      border: 2px solid #ffffff;
+      transition: all 0.2s;
+
+      &:hover {
+        background-color: #ffffff;
+        box-shadow: 0px 9px 21px 0px rgba(0, 0, 0, 0.05);
+        transition: all 0.2s;
+      }
+    }
+  }
+
+  &--picture {
+    position: relative;
+  }
+
+  &--title {
+    position: relative;
+
+    font-family: 'GothamProMedium';
+
+    &__sm {
+      font-size: 13px;
+    }
+
+    &__lg {
+      font-size: 15px;
+    }
+
+    &__underline {
+      text-decoration: underline;
+    }
+
+    &__cheap {
+      &::before {
+        content: '';
+
+        position: absolute;
+        top: -98px;
+        left: 25px;
+
+        display: block;
+
+        width: 50px;
+        height: 50px;
+
+        background-image: url('~../../assets/cheap-icon.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: scale(-1, 1);
+      }
+    }
+
+    &__fast {
+      &::before {
+        content: '';
+
+        position: absolute;
+        top: -106px;
+        left: 37px;
+
+        display: block;
+
+        width: 70px;
+        height: 70px;
+
+        background-image: url('~../../assets/fast-icon.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &__individual {
+      &::before {
+        content: '';
+
+        position: absolute;
+        top: -119px;
+        left: 33px;
+
+        display: block;
+
+        width: 98px;
+        height: 98px;
+
+        background-image: url('~../../assets/individual-icon.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: scale(-1, 1);
+      }
+    }
+  }
+
+  &--description {
+    overflow-y: hidden;
+
+    font-family: 'GothamProLight';
+    font-size: 13px;
+    line-height: 18px;
+
+    &__light-gray {
+      color: $light-gray;
+    }
+  }
+
+  &--price {
+    font-family: 'GothamProMedium';
+    font-size: 16px;
+    text-transform: lowercase;
+
+    &__red {
+      color: #ff0000;
+    }
+  }
+
+  &--price--old {
+    margin-right: 10px;
+
+    color: $light-gray;
+    font-size: 10px;
+    text-decoration: line-through;
+  }
+}

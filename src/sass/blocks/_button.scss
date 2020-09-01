@@ -1,0 +1,63 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'GothamProMedium';
+  font-size: 12px;
+  font-weight: 900;
+
+  &__ghost-dark {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+
+    border: 2px solid $dark-gray;
+    transition: all 0.2s;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      background-color: $dark-gray;
+      transition: all 0.2s;
+    }
+  }
+
+  &__ghost-light {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: all 0.2s;
+
+    &:hover,
+    &:focus {
+      color: $dark-gray;
+      background-color: #ffffff;
+      transition: all 0.2s;
+    }
+  }
+
+  &__yellow {
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+
+    border: 1px solid transparent;
+    background-color: $yellow;
+    transition: all 0.2s;
+
+    &:hover,
+    &:focus {
+      color: $yellow;
+      border: 1px solid $yellow;
+      background-color: transparent;
+      transition: all 0.2s;
+    }
+  }
+}

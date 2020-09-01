@@ -1,0 +1,67 @@
+.hero-section {
+  height: 500px;
+
+  color: #ffffff;
+  background-color: #494843;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url('~../../assets/hero.webp'), url('~../../assets/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  @media (min-width: $tablet-size) {
+  }
+
+  &--wrapper {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  &--title {
+    margin-bottom: 37px;
+
+    font-family: 'GothamProBold';
+    font-size: 36px;
+    text-transform: uppercase;
+  }
+
+  &--subtitle {
+    margin-bottom: 60px;
+
+    font-family: 'GothamProLight';
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &--links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    font-family: 'GothamProLight';
+  }
+
+  &--button {
+    margin-right: 30px;
+    margin-bottom: 15px;
+
+    @media (min-width: 451px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--catalog-link {
+    margin-left: 15px;
+
+    color: #ffffff;
+    text-decoration: underline;
+    transition: all 0.2s;
+
+    &:hover,
+    &:focus {
+      color: $yellow;
+      transition: all 0.2s;
+    }
+  }
+}

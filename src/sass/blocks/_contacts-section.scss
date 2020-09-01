@@ -1,0 +1,114 @@
+.contacts-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  background-color: #343434;
+
+  @media (min-width: 768px) {
+    background-image: url('~../../assets/map.webp'),
+      url('~../../assets/map.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &--box {
+    max-width: 380px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 60px;
+    padding-right: 70px;
+    padding-bottom: 70px;
+    padding-left: 60px;
+
+    background-color: #ffffff;
+
+    @media (min-width: 768px) {
+      margin-right: unset;
+    }
+  }
+
+  &--title {
+    margin-bottom: 50px;
+
+    text-align: left;
+  }
+
+  &--list {
+    font-size: 14px;
+
+    padding-left: 30px;
+  }
+
+  &--item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 36px;
+    }
+
+    &__telephone {
+      font-family: 'GothamProMedium';
+      line-height: 30px;
+
+      &::before {
+        content: '';
+
+        position: absolute;
+        top: 8px;
+        left: -31px;
+
+        display: block;
+
+        width: 12px;
+        height: 12px;
+
+        background-image: url('~../../assets/phone-icon.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &__address {
+      line-height: 16px;
+
+      &::before {
+        content: '';
+
+        position: absolute;
+        top: -2px;
+        left: -34px;
+
+        display: block;
+
+        width: 20px;
+        height: 20px;
+
+        background-image: url('~../../assets/location-icon.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &__mail {
+      text-decoration: underline;
+
+      &::before {
+        content: '';
+
+        position: absolute;
+
+        display: block;
+        top: -2px;
+        left: -30px;
+
+        width: 19px;
+        height: 15px;
+
+        background-image: url('~../../assets/mail-icon.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
